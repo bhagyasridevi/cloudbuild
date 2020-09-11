@@ -27,10 +27,10 @@ run {
             "--maxNumWorkers=5",
             "--numWorkers=1",
             "--zone=us-central1",
-            "--stagingLocation=gs://batch-pipeline12/jars",
-            "--tempLocation=gs://batch-pipeline12/tmp",
-            "--templateLocation=gs://batch-pipeline12/template/pipeline"
+            "--stagingLocation=gs://batch-pipeline/jars",
+            "--tempLocation=gs://batch-pipeline/tmp",
+            "--templateLocation=gs://batch-pipeline/template/pipeline"
     ]
 }
 
-mainClassName="org.bhagya.TemplatePipeline"
+mainClassName="org.bhagyasridevi.TemplatePipeline"
