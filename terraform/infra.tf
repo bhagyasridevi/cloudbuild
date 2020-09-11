@@ -1,18 +1,18 @@
 terraform {
   backend "gcs" {
     bucket = "tf-state-gcp-batch-ingestion"
-    region = "australia-southeast1-a"
+    region = "us-central1"
     prefix = "terraform/state"
   }
 }
 
 provider "google" {
   project = "ind-coe"
-  region = "australia-southeast1-a"
+  region = "us-central1"
 }
 
-resource "google_storage_bucket" "funky-bucket" {
-  name = "batch-pipeline"
+resource "google_storage_bucket" "bucketterra234" {
+  name = "batch-pipeline12"
   storage_class = "REGIONAL"
-  location  = "australia-southeast1"
+  location  = "us-central1"
 }
